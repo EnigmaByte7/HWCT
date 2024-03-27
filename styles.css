@@ -98,7 +98,6 @@ body{
 }
 
 .sub-text{
-  opacity:0;
     font-size:20px;
     font-family: Inter;
     color:white;
@@ -108,7 +107,6 @@ body{
 
 }
 .donate{
-  opacity: 0;
     margin-top: 60px;
     width: 26%;
     height: 11%;

@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded',function() {
 
     gsap.to(".heading-after",{
         display:"block",
-        delay:1,
+        delay:0.5,
         ease:"power2.in",
         scrollTrigger:{
             trigger:".heading"
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded',function() {
     });
     gsap.to(".heading",{
         opacity:"1",
-        delay:1,
+        delay:0.5,
         ease:"power2.in",
         scrollTrigger:{
             trigger:".heading"
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded',function() {
 
     gsap.from('.shelter-image',{
         imageRendering:"pixelated",
-        delay:1,
+        delay:0.5,
         duration:2,
         ease:"power2.in",
         scrollTrigger:{
@@ -124,8 +124,8 @@ document.addEventListener('DOMContentLoaded',function() {
     gsap.to(".chunky-block",{
         transform:"scale(0)",
         borderRadius:"50%",
-        duration:3,
-        delay:1,
+        duration:2,
+        delay:0.5,
         stagger:0.01,
         ease:"power2.inout",
         scrollTrigger:{
@@ -139,8 +139,8 @@ document.addEventListener('DOMContentLoaded',function() {
 
     gsap.from(".shelter-description",{
         opacity:0,
-        delay:1,
-        duration:2,
+        delay:0.5,
+        duration:1.5,
         ease:"powe2.inout",
         scrollTrigger:{
             trigger:".shelter-description",
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded',function() {
 
     gsap.to('#women, #nutri, #digi, #dev',{
         filter:"drop-shadow(4px 5px 6px black)",
-        duration:2,
+        duration:1,
         delay:0.5,
         ease:"power2.in",
         scrollTrigger:{
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded',function() {
     
     gsap.to('#one, #two, #three, #four',{
         filter:"drop-shadow(4px 5px 6px black)",
-        duration:2,
+        duration:1,
         delay:0.5,
         ease:"power2.in",
         scrollTrigger:{
@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded',function() {
 
     gsap.to('.image-wrapper',{
         filter:"drop-shadow(4px 5px 6px black)",
-        duration:2,
+        duration:1,
         delay:0.5,
         ease:"power2.in",
         scrollTrigger:{
@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded',function() {
     });
     gsap.to('.img-top',{
         filter:"drop-shadow(4px 5px 6px black)",
-        duration:2,
+        duration:1,
         delay:0.5,
         ease:"power2.in",
         scrollTrigger:{
@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded',function() {
 
     gsap.from('.text',{
         opacity:"0",
-        duration:2,
+        duration:1,
         delay:0.5,
         ease:"power2.inout",
         scrollTrigger:{
