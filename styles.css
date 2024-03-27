@@ -94,6 +94,17 @@ body{
   background-clip: text;
   color:transparent;
 }
+@supports not (background-clip: text) {
+  #hero {
+    color: magenta; /* Fallback color */
+    background-image: none;
+  }
+
+  #life {
+    color: green; /* Fallback color */
+    background-image: none;
+  }
+}
 .nav-heading:hover{
   color:transparent;
   background:linear-gradient(to right,#40e0d0,#ff8c00,#ff0080);
@@ -1137,4 +1148,5 @@ body{
   .footer{
     height:auto;
   }
+
 }
