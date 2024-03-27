@@ -9,7 +9,10 @@
     <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
-</head>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </script><script src="logic.js"></script>
+</head>         
 <body>
       <div class="header">
         <img src="head.png" id="head">
@@ -27,8 +30,8 @@
           </div>
         </div>
         <div class="center-text">
-          <div class="head-text">BE A HERO</div>
-          <div class="head-text">IN SOMEONE'S LIFE</div>
+          <div class="head-text">BE A <span id="hero">HERO</div>
+          <div class="head-text">IN SOMEONE'S <span id="life">LIFE</div>
           <div class="sub-text">Bridging the gap for unemployed children and women 
             through education and skill development</div>
           <div class="donate">Donate</div>
@@ -37,8 +40,9 @@
       <div class="section">
         <div class="container">
           <div class="item">
-            <img src="pop1.png" id="pop1">
-            <div class="heading">Become Volunteer</div>
+            <div class="img-holder"><img src="pop1.png" id="pop1"></div>
+            <img src="pop1.png" class="alt" id="pop1">
+            <div class="heading">Become Volunteer<span class="heading-after"></span></div>
             <div class="description">
               Become a volunteer if you are<br />
               motivated to support people<br />
@@ -46,17 +50,19 @@
             </div>
           </div>
           <div class="item">
-            <img src="pop2.png" id="pop2">
-            <div class="heading">Start Donation</div>
+            <div class="img-holder"><img src="pop2.png" id="pop1"></div>
+            <img src="pop2.png" class="alt"  id="pop2">
+            <div class="heading">Start Donation <span class="heading-after"></span></div>
             <div class="description">
               Start donating for our community<br />
               to support these angels that<br />
               could fly one day
             </div>
           </div>
-          <div class="item">            
-            <img src="pop3.png" id="pop3">
-            <div class="heading">Virtual Adopter</div>
+          <div class="item">       
+            <div class="img-holder"><img src="pop3.png" id="pop1"></div>
+            <img src="pop3.png" class="alt"  id="pop3">
+            <div class="heading">Virtual Adopter <span class="heading-after"></span></div>
             <div class="description">
               Be a virtual parent for a child<br />
               and support them to build<br />
@@ -67,12 +73,14 @@
         <div class="shelter-container">
           <div class="image-column">
             <img src="sol.png" alt="Shelter of Love" class="shelter-image" loading="lazy" />
+            <span class="chunks"></span>
           </div>
           <div class="content-column">
             <div class="content-wrapper">
               <h1 class="shelter-title">
                 <span class="welcome-text">Welcome to</span>
                 <span class="shelter-name">Shelter of love</span>
+                <span class="grad-bg"></span>
               </h1>
               <p class="shelter-description">
                 <span class="description-text">Shelter of Love is a home for the underprivileged</span>
@@ -96,23 +104,23 @@
             </div>
           </div>
         </div> 
-          <div class="section-heading">What are we doing in Shelter of Love</div>        
+          <div class="section-heading">What are we doing in <span class='shelter-name'>Shelter of Love</span></div>        
           <section class="women-empowerment-section">
             <div class="empowerment-categories">
               <div class="women-empowerment">
-                <img src="empw.png">
+                <img src="empw.png" id="women">
                 Women <br /> Empowerment
               </div>
               <div class="daily-nutrition">
-                <img src="nutri.png">
+                <img src="nutri.png" id="nutri">
                 Daily <br /> Nutrition
               </div>
               <div class="skill-development">
-                <img src="dev.png">
+                <img src="dev.png" id="dev">
                 Skill Development
               </div>
               <div class="digital-learning">
-                <img src="digi.png">
+                <img src="digi.png" id="digi">
                 Digital <br /> Learning
               </div>
             </div>
@@ -122,30 +130,30 @@
               <div class="stat-head">Our Social Impact</div>
               <section class="statistics-container">
                 <div class="children-supported">
-                  <div class="children-supported-number supported-number">1665 +</div>
+                  <div class="children-supported-number supported-number"><span id='child'>0</span> +</div>
                   <div class="children-supported-text supported-text">Children supported</div>
                 </div>
                 <div class="food-reliefs">
-                  <div class="food-reliefs-number supported-number">1156 +</div>
+                  <div class="food-reliefs-number supported-number"><span id='food'>0</span> +</div>
                   <div class="food-reliefs-text supported-text">Food reliefs to the families</div>
                 </div>
                 <div class="support-pwds">
-                  <div class="support-pwds-number supported-number">2065 +</div>
+                  <div class="support-pwds-number supported-number"><span id='pwd'>0</span> +</div>
                   <div class="support-pwds-text supported-text">Support to PwDs</div>
                 </div>
                 <div class="animals-rescued">
-                  <div class="animals-rescued-number supported-number">1237+</div>
+                  <div class="animals-rescued-number supported-number"><span id='animal'>0</span> +</div>
                   <div class="animals-rescued-text supported-text">Animal rescued</div>
                 </div>
               </section>
             </div>
             <section class="img-grid">
-              <div class="grid-item"><img src="1.png"></div>
+              <div class="grid-item"><img src="1.png" id="one"></div>
               <div class="grid-item central">
-                  <img src="2.png">
-                  <img src="3.png">
+                  <img src="2.png" id="two">
+                  <img src="3.png" id="three">
               </div>
-              <div class="grid-item"><img src="4.png"></div>
+              <div class="grid-item"><img src="4.png" id="four"></div>
             </section>
           </div>
           <div class="collaborate-section">
@@ -226,7 +234,6 @@
         </div>
         <div class="awards">
           <div class="award-header">Recognitions</div>
-          <marquee>
               <div class="award-container">
                 <div class="award-item">
                   <img src="a1.png">
@@ -244,7 +251,6 @@
                   <img src="a5.png">
                 </div>
             </div>
-          </marquee>
         </div>
         <section class="newsletter-signup-container">
           <header class="newsletter-signup-header">
@@ -263,5 +269,7 @@
           <img src="footer.png">
         </div>
       </div>
+
 </body>
+
 </html>
