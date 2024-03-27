@@ -678,6 +678,7 @@ body{
     font: 700 22px/34px Inter, sans-serif;
   }
   .collab-btn{
+    margin-top:-27vh;
     justify-content: center;
     z-index:999;
     align-items: center;
@@ -1101,6 +1102,9 @@ body{
   }
   .heading{
     font-size: 4vh;
+  }
+  .item-nav{
+    display: none;
   }
   .item{
     margin-left:0;
