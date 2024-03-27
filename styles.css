@@ -78,6 +78,7 @@ body{
     align-items: center;
 }
 .head-text{
+    text-align:center;
     font-family: Bebas Neue;
     font-size:80px;
     color:white;
@@ -123,7 +124,7 @@ body{
 .donate{
     margin-top: 60px;
     width: 26%;
-    height: 11%;
+    height: 11% !important;
     color: black;
     background-color: #FFB966;
     border-radius: 8px;
