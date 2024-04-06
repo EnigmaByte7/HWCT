@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Donation</title>
+    <link href="vd.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+    <script src="vd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="main-nav">
+                <div class="nav">
+                  <div class="nav-heading">SHELTER OF LOVE</div>
+                </div>
+                <div class="item-nav">
+                  <div class="nav-items">About</div>
+                  <div class="nav-items">Initiative</div>
+                  <div class="nav-items">Gallery</div>
+                  <div class="nav-items">Engages</div>
+                  <div class="nav-items">Features</div>
+                  <div class="nav-items">Contact</div>
+                </div>
+            </div>
+            <img src="/src/vdmain.png">
+            <div class='center-text'>VIRTUAL ADOPTION</div>   
+        </div>
+        <div class="adopt-section">
+            <div class="content">
+                <div class="adopt-heading">Transform a Life with a click </div>
+                <div class="adopt-description">Virtually adopt and bring joy, education, and opportunity to those who need it most. Join us at Shelter of Love, where every virtual adoption creates a real impact."</div>
+                <div class="adopt-btn"><p>Adopt</p></div>
+            </div>
+            <div class="content">
+                <img src="/src/vdchild.png">
+            </div>
+        </div>
+        <section class="virtual-adoption">
+            <div class="virtual-adoption-content">
+            <h2 class="virtual-adoption-title">What is Virtual Adoption?</h2>
+            <p class="virtual-adoption-description">
+                <span class="white-text">
+                Virtual adoption through Shelter of Love is a transformative initiative aimed at supporting orphaned children.
+                </span>
+                <span class="orange-text">Adopt a child</span>
+                <span class="white-text">
+                to provide financial assistance and emotional backing to in need, fostering their holistic development.
+                </span>
+            </p>
+            </div>
+        </section>
+        <section class="categories">
+            <div class="catg-heading">Contribute and support in the following categories</div>
+            <div class="catg-flex">
+                <div class="catg-item">
+                    <div class="catg-img"><img src='/src/vdedu.png'></div>
+                    <div class="catg-name">Educational Opportunities</div>
+                </div>
+                <div class="catg-item">
+                    <div class="catg-img"><img src='/src/vdnutr.png'></div>
+                    <div class="catg-name">Nutritional Support</div>
+                </div>
+                <div class="catg-item">
+                    <div class="catg-img"><img src='/src/vdcare.png'></div>
+                    <div class="catg-name">Emotional Support</div>
+                </div>
+            </div>
+        </section>
+        <section class="sponsorship-section">
+          <div class="sponsorship-container">
+            <div class="sponsorship-info">
+              <div class="sponsorship-details">
+                <h2 class="sponsorship-title">When sponsoring a child</h2>
+                <p class="sponsorship-description">
+                  You first receive a short biography of your sponsored child, including their hobbies, hopes, and favorite memories at Shelter of love Approximately every four months thereafter, you will receive an additional update. These updates may include photos, videos, letters or drawings, and more. Your support ensures your sponsored child receives one of the best educations in the world, and through these regular updates, you get to watch them grow and learn
+                </p>
+              </div>
+            </div>
+            <div class="sponsorship-image-container">
+              <img src="/src/vdgirl.png" alt="Sponsored child" class="sponsorship-image" />
+            </div>
+          </div>
+        </section>         
+        <section class="faq-container">
+        <h2 class="faq-title">FAQs about sponsporing</h2>
+        
+        <div class="wrapper">
+          <div class="faq-item" onclick="show_answer('1','a')">
+            <div class="faq-question">
+              <div class="faq-bullet"></div>
+              <p class="faq-text">What is each update like ?</p>
+            </div>
+            <img src="/src/arr.png" alt="" id="a" class="faq-icon" />
+          </div>     
+          <div class="faq-answer" id="1">
+              This is text...
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="faq-item" onclick="show_answer('2','b')">
+            <div class="faq-question">
+              <div class="faq-bullet"></div>
+              <p class="faq-text">Does the cost of sponsorship increase ?</p>
+            </div>
+            <img src="/src/arr.png" alt="" id="b" class="faq-icon-vertical" />
+          </div>
+          <div class="faq-answer" id="2">
+            This is text...
+          </div>
+        </div>
+
+      
+        
+        <div class="wrapper">
+          <div class="faq-item" onclick="show_answer('3','c')">
+            <div class="faq-question">
+              <div class="faq-bullet"></div>
+              <p class="faq-text">What is the difference between monthly and annnual sponsorship ?</p>
+            </div>
+            <img src="/src/arr.png" alt="" id='c' class="faq-icon-vertical" />
+          </div>
+          <div class="faq-answer" id="3">
+            This is text...
+          </div>
+        </div>
+      
+        
+        <div class="wrapper">
+          <div class="faq-item" onclick="show_answer('4','d')">
+            <div class="faq-question">
+              <div class="faq-bullet"></div>
+              <p class="faq-text">Can I send sponsor a gift ?</p>
+            </div>
+            <img src="/src/arr.png" alt="" id="d" class="faq-icon-vertical" />
+          </div>
+          <div class="faq-answer" id="4">
+            This is text...
+          </div>
+        </div>
+      
+        
+        <div class="wrapper">
+          <div class="faq-item" onclick="show_answer('5','e')">
+            <div class="faq-question">
+              <div class="faq-bullet"></div>
+              <p class="faq-text">Can I write back to my sponsor student ?</p>
+            </div>
+            <img src="/src/arr.png" alt="" id='e' class="faq-icon-vertical" />
+          </div>
+          <div class="faq-answer" id="5">
+            This is text...
+          </div>
+        </div>
+      </section>
+
+      <section class="sponsor-section">
+        <div class="sponsor-container">
+          <div class="sponsor-content">
+            <div class="sponsor-text">
+              <h2 class="sponsor-heading">
+                Invest to make <br /> a beautiful future
+              </h2>
+              <button class="monthly-sponsor-btn">Monthly sponsor</button>
+              <button class="annual-sponsor-btn">Annual sponsor</button>
+            </div>
+          </div>
+          <div class="sponsor-image-container">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9407d8c4b9ede3d5d52b16694961a72462afb8c270b6acccdca445d1ae14a052?apiKey=a8c126334f054c6a92962039fd4509d6&" alt="Sponsor image" class="sponsor-image" />
+          </div>
+        </div>
+      </section> 
+      <div class="image-container">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9a3faf0cb0874ff1520720b2088c4b05dc8a8b5f1ebb02413d23ba28eeffb5e0?apiKey=a8c126334f054c6a92962039fd4509d6&" alt="Descriptive alt text for the image" class="responsive-image" />
+      </div>
+
+      <section class="contact-section">
+        <div class="contact-container">
+          <div class="contact-text">
+            <h2 class="contact-heading">For any query, Let us connect with you</h2>
+          </div>
+          <div class="contact-form">
+            <form class="form-container">
+              <label for="email" class="visually-hidden">E-Mail</label>
+              <input type="email" id="email" class="email-input" placeholder="E-Mail" aria-label="E-Mail">
+              <button type="submit" class="submit-button">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="footer">
+        <img src="footer.png">
+      </div>
+  </div>
+        
+
+</div>          
+</body>
+</html>
