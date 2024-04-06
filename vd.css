@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 body{
     margin:0;
@@ -792,6 +791,9 @@ body{
     }
     .content img{
       width:108%;
+    }
+    *{
+      overflow-x: hidden;
     }
     .virtual-adoption-title{
       font-size: 34px;
