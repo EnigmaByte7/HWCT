@@ -1,7 +1,7 @@
-
+    gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener('DOMContentLoaded',function() {
-    gsap.registerPlugin(ScrollTrigger);
+
     gsap.from('#main-img',{
         filter: "blur(10px)",
         duration:2,
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded',function() {
         display:"block",
         delay:0.5,
         ease:"power2.in",
-        scrolltrigger:{
+        scrollTrigger:{
             trigger:".adopt-section"
         }
     })
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded',function() {
         duration:1.5,
         delay:0.5,
         ease:"power2.in",
-        scrolltrigger:{
+        scrollTrigger:{
             trigger:".adopt-section"
         }
     })
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded',function() {
         duration:1,
         delay:0.5,
         ease:"power2.in",
-        scrolltrigger:{
+        scrollTrigger:{
             trigger:".adopt-section"
         }
     })
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded',function() {
         duration:1,
         delay:0.5,
         ease:"power2.in",
-        scrolltrigger:{
+        scrollTrigger:{
             trigger:".virtual-adoption"
         }
     });
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded',function() {
         delay:0.3,
         ease:"power2.in",
 
-        scrolltrigger:{
+        scrollTrigger:{
             trigger:".categories"
         }
     });
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded',function() {
         duration:1,
         delay:0.5,
         ease:"powe2.in",
-        scrolltrigger:{
+        scrollTrigger:{
             trigger:".sponsorship-section"
         }
     });
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded',function() {
         duration:1.5,
         delay:0.5,
         ease:"power2.in",
-        scrolltrigger:{
+        scrollTrigger:{
             trigger:".sponsorship-section"
         }
     });
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded',function() {
         duration:1.5,
         delay:0.5,
         ease:"power2.in",
-        scrolltrigger:{
+        scrollTrigger:{
             trigger:".faq-container"
         }
     })
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded',function() {
         delay:0.5,
         duration:1,
         ease:"power2.in",
-        scrolltrigger:{
+        scrollTrigger:{
             trigger:".sponsor-section"
         }
     })
