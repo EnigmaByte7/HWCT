@@ -24,6 +24,7 @@ body{
     object-fit: cover;
 }
 .center-text{
+  opacity:0;
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -39,7 +40,8 @@ body{
     top:0;
     line-height: 8vh;
 }
-.main-nav{
+.main-nav{ 
+  opacity: 0;
     display: flex;
     flex-direction: row;
     width:96%;
@@ -96,6 +98,7 @@ body{
     flex-direction: row;
 }
 .content{
+  position:relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,6 +114,7 @@ body{
     font-weight: bold;
     text-align: left;
     word-wrap: break-word;
+    position: relative;
 }
 .adopt-description{
     font-family:Inter;
@@ -118,6 +122,33 @@ body{
     word-wrap: break-word;
     text-align: left;
     color:black;
+    opacity: 0;
+}
+.img-wrapper{
+  position: relative;
+}
+.content img{
+  width:100%;
+  height:100%;
+  padding:0;
+}
+#child-img{
+  position: relative;
+}
+.chunks{
+  content:'';
+  position:absolute;
+  display: grid;
+  width:100%;
+  height:100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  top:0;
+}
+.chunky-block{
+  width:100%;
+  height: 100%;
+  background-color: #fff;
 }
 .adopt-btn{
     width:40%;
@@ -131,11 +162,7 @@ body{
     text-align: center;
     font-family:Inter;
 }
-.content img{
-    width:100%;
-    height:100%;
-    padding:0;
-}
+
 .adopt-first-section{
     display: flex;
     justify-content: center;
@@ -175,11 +202,35 @@ body{
     align-self: center;
     font: 700 32px Inter, sans-serif;
   }
-  
+  .mask-title{
+    display: none;
+    position: absolute;
+    width:0%;
+    height: 100%;
+    top:0;
+    background-color: #034891;
+    left:0;
+    animation: swipe 1.5s ease;
+  }
+  @keyframes swipe {
+    0%{
+      width:0%;
+      margin-left: 0%;
+    }
+    50%{
+      width:100%;
+      margin-left: 0%;
+    }
+    100%{
+      width:0%;
+      margin-left: 100%;
+    }
+  }
   .virtual-adoption-description {
     color: #ffb966;
     text-align: center;
     margin-top: 28px;
+    opacity: 0;
     font: 500 23px Poppins, sans-serif;
   }
   
@@ -321,6 +372,7 @@ body{
     letter-spacing: -0.26px;
     margin-top: 35px;
     font: 400 24px/32px Inter, sans-serif;
+    opacity:0;
   }
 
   @media (max-width: 991px) {
@@ -778,6 +830,9 @@ body{
     .adopt-section{
       row-gap:50px;
       flex-direction: column;
+    }
+    .center-text{
+      line-height: 8vh;
     }
     .content{
       width:100%;
