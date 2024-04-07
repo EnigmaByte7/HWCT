@@ -151,6 +151,7 @@ body{
   background-color: #fff;
 }
 .adopt-btn{
+    overflow:hidden;
     width:40%;
     height:30px;
     border-radius:20px;
