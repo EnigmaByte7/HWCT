@@ -745,11 +745,13 @@ body{
     .form-container {
       max-width: 100%;
       margin-top: 40px;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
+      flex-shrink:0;
     }
   }
   .visually-hidden{
     display: flex;
+      flex-shrink:0;
     align-items: center;
   }
   .email-input {
@@ -789,7 +791,8 @@ body{
 
   @media (max-width: 991px) {
     .submit-button {
-      padding: 10 10px;
+      padding: 10px 10px;
+        flex-shrink:0;
     }
   }
   .footer{
@@ -832,7 +835,7 @@ body{
       flex-direction: column;
     }
     .center-text{
-      line-height: 8vh;
+      line-height: 10vh;
     }
     .content{
       width:100%;
