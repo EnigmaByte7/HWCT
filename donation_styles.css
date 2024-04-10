@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    overflow-x: hidden;
+}
+.header{
+    width:100vw;
+    height:100vh;
+    position: relative;
+}
+.header img{
+    width:100%;
+    height:100%;
+}
+.main-nav{ 
+      display: flex;
+      flex-direction: row;
+      width:96%;
+      height: auto;
+      justify-content: space-between;
+      position: absolute;
+      margin-top:20px;
+      margin-left: 20px;
+  }
+  .nav{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: white;
+      font-family: Poppins;
+  }
+  .item-nav{
+      width: 60%;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      font-family: Poppins;
+      justify-content: space-between;
+  }
+  .nav-items{
+    opacity: 1;
+      position:relative;
+      font-size: 20px;
+      font-weight: bold;
+  }
+  .nav-items::after{
+    content:'' ;
+    background-color: #eaf7f5 ;
+    height:3px ;
+    width:0% ;
+    position: absolute ;
+    left: 0 ;
+    bottom: 0 ;
+    transition: width 0.5s ease-out ;
+  }
+  .nav-items:hover::after{
+    width:100% ;
+  }
+  .nav-heading{
+      opacity: 1;
+      font-size: 24px;
+      font-weight: bolder;
+  }
+.nav-heading:hover{
+    color:transparent;
+    background:linear-gradient(to right,#40e0d0,#ff8c00,#ff0080);
+    background-clip: text;
+}
+.center-text{
+    opacity: 0;
+    position: absolute;
+    width: 60%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: Inter;
+    color: #fff;
+    z-index: 999;
+    text-align: center;
+    top: 43%;
+    left: 20%;
+}
+#highlight{
+    color:#FFB966;
+}
+.blue-box{
+    display:flex;
+    width:60%;
+    height:40px;
+    border-radius:15px;
+    background-color: #BFE6F1;
+    color:#3C3C6E;
+    font-size: 28px;
+    font-family:Inter;
+    justify-content: center;
+    align-items: center;
+    bottom: -20px;
+    left:20%;
+    font-weight: bold;
+    padding:30px;
+    position: absolute;
+}
+.flexbox{
+    margin-top:100px;
+    display: flex;
+    flex-direction: column;
+    row-gap:100px;
+    width:100%;
+    height:auto;
+    padding: 0px 200px;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    width:100%;
+    height: fit-content;
+    overflow: hidden;
+}
+.text-section, #right{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width:50%;
+    align-items: flex-start;
+    justify-content: center;
+}
+.head-first, .head-second,.head-third{
+    font-size:28px;
+    font-family:Inter;
+    font-weight: bold;
+    color:#355F8B;
+    width:100%;
+    text-align: left;
+}
+#light{
+    font-size: 24px;
+    font-weight: lighter;
+}
+.img-section-first, .img-section-second,.img-section-third{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+.img-section-first img,.img-section-second img, .img-section-third img{
+    width:100%;
+    height: auto;
+}
+.desc-first, .desc-second, .desc-third{
+    font-family: Inter;
+    font-size: 20px;
+    color:black;
+    text-wrap:wrap;
+}
+.donate-btn-first, .donate-btn-second, .donate-btn-third{
+    width:30%;
+    height:30px;
+    border-radius: 15px;
+    background-color: #355F8B;
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter;
+}
+.footer{
+    width:100%;
+    object-fit: contain;
+  }
+  .footer img{
+    width:100%;
+    object-fit: cover;
+  }
+  .image-container {
+    width: 100%;
+  }
+
+  @media only screen and (max-width : 768px)  {
+    .item-nav{
+        display:none;
+    }
+    .center-text{
+        width: 100%;
+        height: auto;
+        font-size: 25px;
+        text-align: center;
+        left:0;
+        top: 43%;
+        padding: 0 10px;
+    }
+    .header img {
+        object-fit: cover;
+    }
+    .blue-box{
+        width: 90%;
+        font-size: 20px;
+        text-align: center;
+        bottom: -20px;
+        left: 5%;
+        padding: 30px;
+    }
+    .flexbox{
+        padding:0 20px;
+    }
+    .item{
+        flex-direction: column;
+        row-gap:30px;
+    }
+    .text-section, #right{
+        row-gap: 24px;
+        width: 100%;
+        padding: 0px 30px;
+    }
+    #second{
+        flex-direction: column-reverse !important;
+    }
+  }
