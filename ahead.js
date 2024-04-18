@@ -1,0 +1,49 @@
+gsap.registerPlugin(ScrollTrigger);
+
+document.addEventListener('DOMContentLoaded',function()
+{
+    gsap.from('.header',{
+        y:"-100%",
+        duration:1,
+        delay:0.5,
+        ease:"power2.in"
+    })
+
+    gsap.from('#main-img',{
+        filter:"blur(10px)",
+        duration:1,
+        delay:0.5,
+        ease:"power2.in",
+        scrollTrigger:{
+            trigger:".main"
+        }
+    })
+    gsap.from('head-txt',{
+        display:"none",
+        delay:0,
+        scrollTrigger:{
+            trigger:'.stories'
+        }
+    })
+
+    gsap.from('.text',{
+        opacity:"0",
+        stagger:0.5,
+        delay:0.5,
+        duration:1,
+        ease:"power2.in",
+        scrollTrigger:{
+            trigger:".text"
+        }
+    })
+    gsap.from('.quote',{
+        opacity:"0",
+        duration:1,
+        delay:0.5,
+        ease:"power2.in",
+        scrollTrigger:{
+            trigger:".sun"
+        }
+    }
+)
+});
