@@ -5,11 +5,11 @@ If you are carrying over the work please check out the below details before you 
 * This link https://www.figma.com/file/mL8zjciWqcdKwDdA24MoZM/NGO?type=design&node-id=193-820&mode=design&t=5gKHfhxwYsXaRaNi-0 contains the website designs you need to work upon.
 * 5 out of 10 pages are completed except for some linking and small changes. These pages are Homepage, Donation page, Virtual Adoption, Gallery and Donation Ahead.
 * Here are the links to these pages :<br>
-    [hwct.vercel.app](https://hwct.vercel.app/) <br>
-    [hwct.vercel.app/](https://hwct.vercel.app/donation.html) <br>
-    https://hwct.vercel.app/donation_ahead.html <br> 
-    https://hwct.vercel.app/gallery.html <br>
-    https://hwct.vercel.app/vdonation.html <br>
+    <t>[hwct.vercel.app](https://hwct.vercel.app/) <br>
+    <t>[hwct.vercel.app/](https://hwct.vercel.app/donation.html) <br>
+    <t>https://hwct.vercel.app/donation_ahead.html <br> 
+    <t>https://hwct.vercel.app/gallery.html <br>
+    <t>https://hwct.vercel.app/vdonation.html <br>
   You can take inspiration form here to continue with other pages.
 
 * Use HTML, CSS and JavaScript to build the pages, the animations are done using GSAP animaitons, if you are new to gsap, consider this tutorial https://gsap.com/resources/get-started.
