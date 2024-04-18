@@ -5,7 +5,7 @@ If you are carrying over the work please check out the below details before you 
 * This link https://www.figma.com/file/mL8zjciWqcdKwDdA24MoZM/NGO?type=design&node-id=193-820&mode=design&t=5gKHfhxwYsXaRaNi-0 contains the website designs you need to work upon.
 * 5 out of 10 pages are completed except for some linking and small changes. These pages are Homepage, Donation page, Virtual Adoption, Gallery and Donation Ahead.
 * Here are the links to these pages :
-  [hwct.vercel.app](https://hwct.vercel.app/)
+  [hwct.vercel.app](https://hwct.vercel.app/) <br>
   [hwct.vercel.app/](https://hwct.vercel.app/donation.html)
   https://hwct.vercel.app/donation_ahead.html
   https://hwct.vercel.app/gallery.html
