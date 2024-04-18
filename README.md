@@ -22,4 +22,4 @@ Some small details are incomplete and may need your attention ::
 * Little tweaks may be required in the mobile UI.
 * A seperate navbar for mobile displays, A hamburger menu (side drawer)  may be a nice option for this.
 
-##That's all ! Best of Luck 🥳🥳🥳, Happy Coding !
+## That's all ! Best of Luck 🥳🥳🥳, Happy Coding !
