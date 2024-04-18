@@ -15,7 +15,7 @@ If you are carrying over the work please check out the below details before you 
 * Use HTML, CSS and JavaScript to build the pages, the animations are done using GSAP animaitons, if you are new to gsap, consider this tutorial https://gsap.com/resources/get-started.
   Or see any of the js files in the repo, to get an idea. Try to keep the animations simple to suite the theme of website, simple animations may include blur effects, fade-in, swipe left     or right or maybe anything you like.
 
-#Pending stuff
+## Pending stuff
 Some small details are incomplete and may need your attention ::
 
 * The footer is incomplete and is merely an image of the intended design, kindly complete it, if you find it very complex in design, feel free to make a simlper yet effective footer in place, though keep it the same in every page.
